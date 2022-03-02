@@ -23,7 +23,7 @@ func NewProduct(name string, price float64) (*Product, error) {
 }
 
 func (p *Product) priceValid() error {
-	if p.Price <= 0 {
+	if p.Price <= 4 {
 		return errors.New("price not lower the 0")
 	}
 	return nil
